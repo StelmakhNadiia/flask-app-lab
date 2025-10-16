@@ -1,0 +1,255 @@
+/* ========================= */
+/* --- Загальні стилі --- */
+/* ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #c6c5c5;
+    color: #333333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #2c5030;
+    border-bottom: 3px solid #29b933;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #3ab929;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+/* ========================= */
+/* --- Навігація --- */
+/* ========================= */
+
+.navbar {
+    padding: 15px 0;
+    background-color: #2d502c;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #939393 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #313131 !important;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #34db34 !important;
+}
+
+.navbar-nav .active .nav-link {
+    color: #34db34 !important;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* --- Футер --- */
+/* ========================= */
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    background-color: #e6e7e6;
+    color: #333333;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+}
+
+footer small {
+    font-weight: 300;
+}
+
+/* ========================= */
+/* --- Секція "Про себе" --- */
+/* ========================= */
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Ліва колонка */
+.about-left {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.about-photo {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.about-info p {
+    margin: 5px 0;
+}
+
+/* Права колонка */
+.about-right {
+    flex: 2 1 400px;
+}
+
+.about-right h2 {
+    margin-bottom: 15px;
+    color: #29b930;
+}
+
+/* ========================= */
+/* --- Секції --- */
+/* ========================= */
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 22px;
+    color: #29b930;
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* --- Навички --- */
+/* ========================= */
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #29b930;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ========================= */
+/* --- Технології --- */
+/* ========================= */
+
+#technologies p {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ========================= */
+/* --- Досвід / Проекти --- */
+/* ========================= */
+
+#experience p {
+    background-color: #f4f6f7;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ========================= */
+/* --- Контактна форма --- */
+/* ========================= */
+
+form {
+    background-color: #f4f6f7;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+    color: #2d502c;
+}
+
+form input.form-control,
+form textarea.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input.form-control:focus,
+form textarea.form-control:focus {
+    border-color: #2bb929;
+    box-shadow: 0 0 5px rgba(41, 185, 58, 0.5);
+}
+
+form button.btn {
+    background-color: #1c801f;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button.btn:hover {
+    background-color: #1c801f;
+}
+
+/* ========================= */
+/* --- Контактна інформація --- */
+/* ========================= */
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info div {
+    background-color: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
