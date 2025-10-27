@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
 
 {% block content %}
-<h1 class="mb-4">Моє резюме</h1>
 
 <!-- Секція "Про себе" -->
 <section id="about" class="section">
   <div class="about-container">
-    <!-- Ліва колонка: фото та контактна інформація -->
+
     <div class="about-left">
       <img src="{{ url_for('static', filename='images/myphoto.jpg') }}" alt="Фото" class="about-photo">
       <div class="about-info">
@@ -16,7 +18,7 @@
       </div>
     </div>
 
-    <!-- Права колонка: опис про себе -->
+    
     <div class="about-right">
       <h2>Про себе</h2>
       <p>Я студентка факультету математики та інформатики, спеціальність Інженерія програмного забезпечення. Маю досвід роботи над веб-проєктами, UX/UI дизайном та створенням адаптивних інтерфейсів.</p>

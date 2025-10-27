@@ -1,6 +1,16 @@
 /* ========================= */
 /* --- Загальні стилі --- */
 /* ========================= */
+/* --- Flash повідомлення --- */
+.flash-container .alert {
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -51,6 +61,7 @@ li {
 .section {
     margin-bottom: 30px;
 }
+
 
 /* ========================= */
 /* --- Навігація --- */
@@ -119,7 +130,7 @@ footer small {
 }
 
 .about-photo {
-    width: 200px;
+    width: 100px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     margin-bottom: 15px;
@@ -235,21 +246,4 @@ form button.btn {
 
 form button.btn:hover {
     background-color: #1c801f;
-}
-
-/* ========================= */
-/* --- Контактна інформація --- */
-/* ========================= */
-
-.contact-info {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.contact-info div {
-    background-color: #ecf0f1;
-    padding: 10px 15px;
-    border-radius: 5px;
 }

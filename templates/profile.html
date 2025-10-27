@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile Page{% endblock %}
+
+{% block head_extra %}
+<style>
+body.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+body.dark-theme {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+.card, .list-group-item, table, th, td {
+    background-color: inherit;
+    color: inherit;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<h2>Привіт, {{ username }}!</h2>
+
+<div class="mb-3">
+    <a href="{{ url_for('logout') }}" class="btn btn-danger">Вийти</a>
+</div>
+
+<!-- Кнопки зміни теми -->
+<div class="mb-4">
+    <a href="{{ url_for('set_theme', theme='light') }}" class="btn btn-light">Світла тема</a>
+    <a href="{{ url_for('set_theme', theme='dark') }}" class="btn btn-dark text-white">Темна тема</a>
+</div>
+
+<hr>
+
+<h4>Додати кукі</h4>
+<form method="post" class="row g-3 mb-4">
+    <input type="hidden" name="action" value="add">
+    <div class="col-md-3">
+        <input type="text" class="form-control" name="key" placeholder="Ключ">
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" name="value" placeholder="Значення">
+    </div>
+    <div class="col-md-3">
+        <input type="number" class="form-control" name="duration" placeholder="Термін дії (сек.)" value="60">
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-success">Додати куку</button>
+    </div>
+</form>
+
+<h4>Видалити кукі</h4>
+<form method="post" class="row g-3 mb-4">
+    <input type="hidden" name="action" value="delete">
+    <div class="col-md-3">
+        <input type="text" class="form-control" name="key" placeholder="Ключ (залишити порожнім щоб видалити всі)">
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-warning">Видалити куку</button>
+    </div>
+</form>
+
+<hr>
+
+<h4>Поточні кукі</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ключ</th>
+            <th>Значення</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, value in cookies.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="2">Кукі відсутні</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
