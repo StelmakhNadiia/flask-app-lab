@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Контакти</h1>
+
+<form method="post" action="#">
+  <div class="mb-3">
+    <label>Ваше ім’я</label>
+    <input type="text" class="form-control" placeholder="Введіть ім’я">
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="Введіть email">
+  </div>
+  <div class="mb-3">
+    <label>Повідомлення</label>
+    <textarea class="form-control" rows="4" placeholder="Текст повідомлення"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Відправити</button>
+</form>
+{% endblock %}
