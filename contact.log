@@ -1,0 +1,212 @@
+2025-10-28 22:03:22,089 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-28 22:03:22,089 - [33mPress CTRL+C to quit[0m
+2025-10-28 22:03:22,092 -  * Restarting with stat
+2025-10-28 22:03:22,879 -  * Debugger is active!
+2025-10-28 22:03:22,883 -  * Debugger PIN: 404-099-097
+2025-10-28 22:06:01,450 - 127.0.0.1 - - [28/Oct/2025 22:06:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-28 22:06:01,641 - 127.0.0.1 - - [28/Oct/2025 22:06:01] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-28 22:06:01,715 - 127.0.0.1 - - [28/Oct/2025 22:06:01] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-28 22:06:01,805 - 127.0.0.1 - - [28/Oct/2025 22:06:01] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=OMsNKT3XO22pvltmKdF8 HTTP/1.1" 200 -
+2025-10-28 22:06:01,841 - 127.0.0.1 - - [28/Oct/2025 22:06:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-04 00:21:20,124 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-04 00:21:20,125 - [33mPress CTRL+C to quit[0m
+2025-11-04 00:21:20,127 -  * Restarting with stat
+2025-11-04 00:21:20,521 -  * Debugger is active!
+2025-11-04 00:21:20,521 -  * Debugger PIN: 404-099-097
+2025-11-05 01:11:37,753 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 01:11:37,754 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:11:37,756 -  * Restarting with stat
+2025-11-05 01:11:38,185 -  * Debugger is active!
+2025-11-05 01:11:38,188 -  * Debugger PIN: 404-099-097
+2025-11-05 01:12:57,914 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:12:58,104 -  * Restarting with stat
+2025-11-05 01:12:58,237 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:12:58,301 -  * Restarting with stat
+2025-11-05 01:12:58,713 -  * Debugger is active!
+2025-11-05 01:12:58,717 -  * Debugger PIN: 404-099-097
+2025-11-05 01:12:58,849 -  * Debugger is active!
+2025-11-05 01:12:58,852 -  * Debugger PIN: 404-099-097
+2025-11-05 01:13:05,931 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-05 01:13:05,931 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:13:05,934 -  * Restarting with stat
+2025-11-05 01:13:06,361 -  * Debugger is active!
+2025-11-05 01:13:06,363 -  * Debugger PIN: 404-099-097
+2025-11-05 01:13:56,655 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-05 01:13:56,656 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:13:56,657 -  * Restarting with stat
+2025-11-05 01:13:57,150 -  * Debugger is active!
+2025-11-05 01:13:57,154 -  * Debugger PIN: 404-099-097
+2025-11-05 01:14:37,728 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:14:37,775 -  * Restarting with stat
+2025-11-05 01:14:38,055 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:14:38,128 -  * Restarting with stat
+2025-11-05 01:14:38,339 -  * Debugger is active!
+2025-11-05 01:14:38,342 -  * Debugger PIN: 404-099-097
+2025-11-05 01:14:38,635 -  * Debugger is active!
+2025-11-05 01:14:38,638 -  * Debugger PIN: 404-099-097
+2025-11-05 01:14:42,649 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 01:14:42,650 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:14:42,651 -  * Restarting with stat
+2025-11-05 01:14:43,051 -  * Debugger is active!
+2025-11-05 01:14:43,053 -  * Debugger PIN: 404-099-097
+2025-11-05 01:15:50,704 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:15:50,751 -  * Restarting with stat
+2025-11-05 01:15:51,009 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\run.py', reloading
+2025-11-05 01:15:51,097 -  * Restarting with stat
+2025-11-05 01:15:51,402 -  * Debugger is active!
+2025-11-05 01:15:51,405 -  * Debugger PIN: 404-099-097
+2025-11-05 01:15:51,735 -  * Debugger is active!
+2025-11-05 01:15:51,738 -  * Debugger PIN: 404-099-097
+2025-11-05 01:22:49,011 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\app\\views.py', reloading
+2025-11-05 01:22:49,070 -  * Restarting with stat
+2025-11-05 01:22:49,233 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\app\\views.py', reloading
+2025-11-05 01:22:49,322 -  * Restarting with stat
+2025-11-05 01:49:18,056 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 01:49:18,056 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:49:18,057 -  * Restarting with stat
+2025-11-05 01:49:18,510 -  * Debugger is active!
+2025-11-05 01:49:18,512 -  * Debugger PIN: 404-099-097
+2025-11-05 01:49:58,523 - 127.0.0.1 - - [05/Nov/2025 01:49:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-05 01:49:58,678 - 127.0.0.1 - - [05/Nov/2025 01:49:58] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-05 01:49:58,705 - 127.0.0.1 - - [05/Nov/2025 01:49:58] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-05 01:49:58,784 - 127.0.0.1 - - [05/Nov/2025 01:49:58] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=gy75uk3BF4qtXFUgJowi HTTP/1.1" 200 -
+2025-11-05 01:49:58,906 - 127.0.0.1 - - [05/Nov/2025 01:49:58] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-05 01:50:09,479 - 127.0.0.1 - - [05/Nov/2025 01:50:09] "[35m[1mGET /contacts HTTP/1.1[0m" 500 -
+2025-11-05 01:50:09,542 - 127.0.0.1 - - [05/Nov/2025 01:50:09] "GET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-05 01:50:09,554 - 127.0.0.1 - - [05/Nov/2025 01:50:09] "GET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-05 01:50:09,646 - 127.0.0.1 - - [05/Nov/2025 01:50:09] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=gy75uk3BF4qtXFUgJowi HTTP/1.1" 200 -
+2025-11-05 01:50:09,788 - 127.0.0.1 - - [05/Nov/2025 01:50:09] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-05 01:52:37,098 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\app\\__init__.py', reloading
+2025-11-05 01:52:37,153 -  * Restarting with stat
+2025-11-05 01:55:43,032 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 01:55:43,033 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:55:43,035 -  * Restarting with stat
+2025-11-05 01:55:43,505 -  * Debugger is active!
+2025-11-05 01:55:43,507 -  * Debugger PIN: 404-099-097
+2025-11-05 01:56:04,556 - 127.0.0.1 - - [05/Nov/2025 01:56:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-05 01:56:04,702 - 127.0.0.1 - - [05/Nov/2025 01:56:04] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 01:56:04,707 - 127.0.0.1 - - [05/Nov/2025 01:56:04] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 01:56:04,775 - 127.0.0.1 - - [05/Nov/2025 01:56:04] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=7OE5Udl5utsIuYhj0E9p HTTP/1.1" 200 -
+2025-11-05 01:58:05,593 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 01:58:05,593 - [33mPress CTRL+C to quit[0m
+2025-11-05 01:58:05,596 -  * Restarting with stat
+2025-11-05 01:58:06,042 -  * Debugger is active!
+2025-11-05 01:58:06,045 -  * Debugger PIN: 404-099-097
+2025-11-05 01:58:53,414 - 127.0.0.1 - - [05/Nov/2025 01:58:53] "GET / HTTP/1.1" 200 -
+2025-11-05 01:58:53,488 - 127.0.0.1 - - [05/Nov/2025 01:58:53] "GET /static/images/myphoto.jpg HTTP/1.1" 200 -
+2025-11-05 01:58:53,705 - 127.0.0.1 - - [05/Nov/2025 01:58:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-05 01:59:01,761 - 127.0.0.1 - - [05/Nov/2025 01:59:01] "GET / HTTP/1.1" 200 -
+2025-11-05 01:59:01,807 - 127.0.0.1 - - [05/Nov/2025 01:59:01] "[36mGET /static/images/myphoto.jpg HTTP/1.1[0m" 304 -
+2025-11-05 01:59:41,968 - 127.0.0.1 - - [05/Nov/2025 01:59:41] "[35m[1mGET /contacts HTTP/1.1[0m" 500 -
+2025-11-05 01:59:42,007 - 127.0.0.1 - - [05/Nov/2025 01:59:42] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 01:59:42,008 - 127.0.0.1 - - [05/Nov/2025 01:59:42] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 01:59:42,081 - 127.0.0.1 - - [05/Nov/2025 01:59:42] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=JtwFNVg9A9P0IDFw4xcA HTTP/1.1" 200 -
+2025-11-05 02:00:47,864 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 02:00:47,864 - [33mPress CTRL+C to quit[0m
+2025-11-05 02:00:47,865 -  * Restarting with stat
+2025-11-05 02:00:48,309 -  * Debugger is active!
+2025-11-05 02:00:48,312 -  * Debugger PIN: 404-099-097
+2025-11-05 02:00:59,210 - 127.0.0.1 - - [05/Nov/2025 02:00:59] "[35m[1mGET /contacts HTTP/1.1[0m" 500 -
+2025-11-05 02:00:59,327 - 127.0.0.1 - - [05/Nov/2025 02:00:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 02:00:59,329 - 127.0.0.1 - - [05/Nov/2025 02:00:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 02:00:59,365 - 127.0.0.1 - - [05/Nov/2025 02:00:59] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=nVliJ7lWWU10AL4VqlfQ HTTP/1.1" 200 -
+2025-11-05 02:00:59,433 - 127.0.0.1 - - [05/Nov/2025 02:00:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-05 02:01:08,180 - 127.0.0.1 - - [05/Nov/2025 02:01:08] "[35m[1mGET /contacts HTTP/1.1[0m" 500 -
+2025-11-05 02:01:08,203 - 127.0.0.1 - - [05/Nov/2025 02:01:08] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 02:01:08,206 - 127.0.0.1 - - [05/Nov/2025 02:01:08] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 02:01:08,238 - 127.0.0.1 - - [05/Nov/2025 02:01:08] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=nVliJ7lWWU10AL4VqlfQ HTTP/1.1[0m" 304 -
+2025-11-05 02:02:23,819 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 02:02:23,819 - [33mPress CTRL+C to quit[0m
+2025-11-05 02:02:23,821 -  * Restarting with stat
+2025-11-05 02:02:24,350 -  * Debugger is active!
+2025-11-05 02:02:24,354 -  * Debugger PIN: 404-099-097
+2025-11-05 02:02:28,756 - 127.0.0.1 - - [05/Nov/2025 02:02:28] "GET /contacts HTTP/1.1" 200 -
+2025-11-05 02:02:37,794 - 127.0.0.1 - - [05/Nov/2025 02:02:37] "GET / HTTP/1.1" 200 -
+2025-11-05 02:02:37,877 - 127.0.0.1 - - [05/Nov/2025 02:02:37] "[36mGET /static/images/myphoto.jpg HTTP/1.1[0m" 304 -
+2025-11-05 02:02:41,403 - 127.0.0.1 - - [05/Nov/2025 02:02:41] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-11-05 02:02:41,442 - 127.0.0.1 - - [05/Nov/2025 02:02:41] "GET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-05 02:02:41,456 - 127.0.0.1 - - [05/Nov/2025 02:02:41] "GET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-05 02:02:41,482 - 127.0.0.1 - - [05/Nov/2025 02:02:41] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=v1PhDvI9ofRziDXts3H5 HTTP/1.1" 200 -
+2025-11-05 02:02:41,568 - 127.0.0.1 - - [05/Nov/2025 02:02:41] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-05 02:02:45,348 - 127.0.0.1 - - [05/Nov/2025 02:02:45] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:02:45,368 - 127.0.0.1 - - [05/Nov/2025 02:02:45] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-11-05 02:02:45,400 - 127.0.0.1 - - [05/Nov/2025 02:02:45] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 02:02:45,401 - 127.0.0.1 - - [05/Nov/2025 02:02:45] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 02:02:45,420 - 127.0.0.1 - - [05/Nov/2025 02:02:45] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=v1PhDvI9ofRziDXts3H5 HTTP/1.1[0m" 304 -
+2025-11-05 02:06:58,814 - 127.0.0.1 - - [05/Nov/2025 02:06:58] "GET /contacts HTTP/1.1" 200 -
+2025-11-05 02:07:08,402 - 127.0.0.1 - - [05/Nov/2025 02:07:08] "GET /contacts HTTP/1.1" 200 -
+2025-11-05 02:07:10,231 - 127.0.0.1 - - [05/Nov/2025 02:07:10] "GET /contacts HTTP/1.1" 200 -
+2025-11-05 02:07:11,689 - 127.0.0.1 - - [05/Nov/2025 02:07:11] "GET /contacts HTTP/1.1" 200 -
+2025-11-05 02:07:59,267 - 127.0.0.1 - - [05/Nov/2025 02:07:59] "[35m[1mPOST /contacts HTTP/1.1[0m" 500 -
+2025-11-05 02:07:59,303 - 127.0.0.1 - - [05/Nov/2025 02:07:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 02:07:59,307 - 127.0.0.1 - - [05/Nov/2025 02:07:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 02:07:59,344 - 127.0.0.1 - - [05/Nov/2025 02:07:59] "GET /contacts?__debugger__=yes&cmd=resource&f=console.png&s=v1PhDvI9ofRziDXts3H5 HTTP/1.1" 200 -
+2025-11-05 02:07:59,428 - 127.0.0.1 - - [05/Nov/2025 02:07:59] "[36mGET /contacts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-05 02:09:09,901 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 02:09:09,901 - [33mPress CTRL+C to quit[0m
+2025-11-05 02:09:09,903 -  * Restarting with stat
+2025-11-05 02:09:10,625 -  * Debugger is active!
+2025-11-05 02:09:10,629 -  * Debugger PIN: 404-099-097
+2025-11-05 02:09:17,704 - 127.0.0.1 - - [05/Nov/2025 02:09:17] "POST /contacts HTTP/1.1" 200 -
+2025-11-05 02:09:54,313 - 127.0.0.1 - - [05/Nov/2025 02:09:54] "POST /contacts HTTP/1.1" 200 -
+2025-11-05 02:09:57,118 - 127.0.0.1 - - [05/Nov/2025 02:09:57] "POST /contacts HTTP/1.1" 200 -
+2025-11-05 02:09:58,379 - 127.0.0.1 - - [05/Nov/2025 02:09:58] "POST /contacts HTTP/1.1" 200 -
+2025-11-05 02:10:22,920 - 127.0.0.1 - - [05/Nov/2025 02:10:22] "[33mGET /users HTTP/1.1[0m" 404 -
+2025-11-05 02:10:32,091 - 127.0.0.1 - - [05/Nov/2025 02:10:32] "[35m[1mGET /users/login HTTP/1.1[0m" 500 -
+2025-11-05 02:10:32,190 - 127.0.0.1 - - [05/Nov/2025 02:10:32] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-05 02:10:32,191 - 127.0.0.1 - - [05/Nov/2025 02:10:32] "[36mGET /users/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-05 02:10:32,223 - 127.0.0.1 - - [05/Nov/2025 02:10:32] "GET /users/login?__debugger__=yes&cmd=resource&f=console.png&s=B4Bqi1tmpLW4IAPFPzUD HTTP/1.1" 200 -
+2025-11-05 02:11:31,779 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\app\\forms.py', reloading
+2025-11-05 02:11:31,829 -  * Restarting with stat
+2025-11-05 02:11:32,423 -  * Debugger is active!
+2025-11-05 02:11:32,425 -  * Debugger PIN: 404-099-097
+2025-11-05 02:11:36,977 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 02:11:36,977 - [33mPress CTRL+C to quit[0m
+2025-11-05 02:11:36,980 -  * Restarting with stat
+2025-11-05 02:11:37,411 -  * Debugger is active!
+2025-11-05 02:11:37,414 -  * Debugger PIN: 404-099-097
+2025-11-05 02:11:43,584 - 127.0.0.1 - - [05/Nov/2025 02:11:43] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:12:13,303 - 127.0.0.1 - - [05/Nov/2025 02:12:13] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:12:15,432 - 127.0.0.1 - - [05/Nov/2025 02:12:15] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:13:10,693 - 127.0.0.1 - - [05/Nov/2025 02:13:10] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:13:12,621 - 127.0.0.1 - - [05/Nov/2025 02:13:12] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:13:13,728 - 127.0.0.1 - - [05/Nov/2025 02:13:13] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:13:13,736 - 127.0.0.1 - - [05/Nov/2025 02:13:13] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:13:36,718 - 127.0.0.1 - - [05/Nov/2025 02:13:36] "[33mGET /users/logout HTTP/1.1[0m" 404 -
+2025-11-05 02:13:51,733 - 127.0.0.1 - - [05/Nov/2025 02:13:51] "GET / HTTP/1.1" 200 -
+2025-11-05 02:13:51,820 - 127.0.0.1 - - [05/Nov/2025 02:13:51] "[36mGET /static/images/myphoto.jpg HTTP/1.1[0m" 304 -
+2025-11-05 02:13:53,578 - 127.0.0.1 - - [05/Nov/2025 02:13:53] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:14:11,030 - 127.0.0.1 - - [05/Nov/2025 02:14:11] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:14:12,574 - 127.0.0.1 - - [05/Nov/2025 02:14:12] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:14:14,115 - 127.0.0.1 - - [05/Nov/2025 02:14:14] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:14:14,125 - 127.0.0.1 - - [05/Nov/2025 02:14:14] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:14:16,058 - 127.0.0.1 - - [05/Nov/2025 02:14:16] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:00,340 - 127.0.0.1 - - [05/Nov/2025 02:15:00] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:01,803 - 127.0.0.1 - - [05/Nov/2025 02:15:01] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:02,492 - 127.0.0.1 - - [05/Nov/2025 02:15:02] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:03,262 - 127.0.0.1 - - [05/Nov/2025 02:15:03] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:13,118 - 127.0.0.1 - - [05/Nov/2025 02:15:13] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:15:43,943 - 127.0.0.1 - - [05/Nov/2025 02:15:43] "POST /users/login HTTP/1.1" 200 -
+2025-11-05 02:16:01,232 - 127.0.0.1 - - [05/Nov/2025 02:16:01] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:16:01,250 - 127.0.0.1 - - [05/Nov/2025 02:16:01] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:16:03,469 - 127.0.0.1 - - [05/Nov/2025 02:16:03] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:16:03,480 - 127.0.0.1 - - [05/Nov/2025 02:16:03] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:16:15,183 - 127.0.0.1 - - [05/Nov/2025 02:16:15] "[32mGET /users/profile HTTP/1.1[0m" 302 -
+2025-11-05 02:16:15,196 - 127.0.0.1 - - [05/Nov/2025 02:16:15] "GET /users/login HTTP/1.1" 200 -
+2025-11-05 02:23:26,372 -  * Detected change in 'D:\\3 курс\\Вебпрограмування мовою Python\\flask_app_stelmakh\\app\\views.py', reloading
+2025-11-05 02:23:26,449 -  * Restarting with stat
+2025-11-05 02:23:39,455 -  * Restarting with stat
+2025-11-05 02:23:48,162 -  * Restarting with stat

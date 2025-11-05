@@ -1,21 +1,30 @@
 {% extends 'base.html' %}
+{% import "_render_field.html" as rf %}
 
-{% block title %}Login Page{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="content-card">
+            <h1 class="text-center">Login</h1>
+            <hr>
 
-<h2>Увійти</h2>
+            <form action="{{ url_for('users.login') }}" method="POST" novalidate>
 
-<form action="" method="post">
-    <div class="mb-3">
-        <label for="login" class="form-label">Ім'я користувача</label>
-        <input type="text" name="login" class="form-control" id="login">
+                {{ form.hidden_tag() }}
+
+                {{ rf.render_field(form.username) }}
+                {{ rf.render_field(form.password) }}
+
+                <div class="mb-3 form-check">
+                    {{ form.remember(class="form-check-input") }}
+                    {{ form.remember.label(class="form-check-label") }}
+                </div>
+
+                {{ form.submit(class="btn btn-primary w-100") }}
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Пароль</label>
-        <input type="password" name="password" class="form-control" id="password">
-    </div>
-    <button type="submit" class="btn btn-primary">Увійти</button>
-</form>
-
+</div>
 {% endblock %}
