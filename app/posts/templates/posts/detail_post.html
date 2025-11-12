@@ -1,13 +1,25 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
-{% block title %} POSTS {% endblock %}
+{% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
+<div class="content-card">
+    <h1>{{ post.title }}</h1>
+    <p class="text-muted">
+        By <strong>{{ post.author }}</strong> |
+        Category: <strong>{{ post.category.name.title() }}</strong> |
+        Published: {{ post.posted.strftime('%Y-%m-%d %H:%M') }}
+    </p>
+    <hr>
 
-    <h1>Post № {{post["id"]}} - {{post["title"]}} </h1>
+    <div class="post-content" style="white-space: pre-wrap;">
+        {{ post.content | safe }}
+    </div>
 
-    <p>{{ post.get('content') }}</p>
+    <hr>
 
-    <a href="{{ url_for("posts.get_posts") }}">Return posts</a>
-
+    <a href="{{ url_for('posts.update_post', id=post.id) }}" class="btn btn-warning">Edit Post</a>
+    <a href="{{ url_for('posts.delete_post', id=post.id) }}" class="btn btn-danger">Delete Post</a>
+    <a href="{{ url_for('posts.get_posts') }}" class="btn btn-secondary">Back to All Posts</a>
+</div>
 {% endblock %}

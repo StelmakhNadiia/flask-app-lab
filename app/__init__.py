@@ -1,15 +1,47 @@
-from flask import Flask
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
+from .config import config_map 
+from sqlalchemy.orm import DeclarativeBase
+from flask_migrate import Migrate
+import os
 
-app = Flask(__name__)
+class Base(DeclarativeBase):
+    pass
 
-app.config.from_pyfile("../config.py")
+db = SQLAlchemy(model_class=Base)
+migrate = Migrate()
 
-from app import views
 
-from .users import views
+def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flask:
 
-app.register_blueprint(views.users_bp)
+    app = Flask(__name__)
+    app.config.from_object(config_map[config_name])
+    
+    print(f"Running in config: {config_name}")
 
-from .posts import post_bp
+    db.init_app(app)
+    migrate.init_app(app, db)
 
-app.register_blueprint(post_bp)
+
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template('404.html'), 404
+ 
+
+    with app.app_context():
+        from . import views as main_blueprint
+        app.register_blueprint(main_blueprint.main_bp)
+        
+       
+        from .users.views import users_bp
+        app.register_blueprint(users_bp)
+        
+   
+        from .posts import post_bp
+        app.register_blueprint(post_bp, url_prefix="/posts")
+        
+        
+        from .posts import models 
+        
+
+    return app

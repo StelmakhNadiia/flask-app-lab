@@ -24,13 +24,13 @@ body.dark-theme {
 <h2>Привіт, {{ username }}!</h2>
 
 <div class="mb-3">
-   <a href="{{ url_for('users.logout') }}" class="btn btn-danger">Вийти</a>
+  <a href="{{ url_for('users_bp.logout') }}" class="btn btn-danger">Вийти</a>
 </div>
 
 <!-- Кнопки зміни теми -->
 <div class="mb-4">
-<a href="{{ url_for('users.set_theme', theme='light') }}" class="btn btn-light">Світла тема</a>
-<a href="{{ url_for('users.set_theme', theme='dark') }}" class="btn btn-dark">Темна тема</a>
+<a href="{{ url_for('users_bp.set_profile_theme', theme='light') }}" class="btn btn-light">Світла тема</a>
+<a href="{{ url_for('users_bp.set_profile_theme', theme='dark') }}" class="btn btn-dark">Темна тема</a>
 
 </div>
 

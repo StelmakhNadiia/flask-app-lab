@@ -1,0 +1,27 @@
+{# app/templates/includes/_render_field.html - ВИПРАВЛЕНА ВЕРСІЯ #}
+
+{% macro render_field(field) %}  {# <--- ЗМІНИ ТУТ: ВИДАЛЕНО **kwargs #}
+    <div class="mb-3">
+        {{ field.label(class="form-label") }}
+        
+        {# Додаємо клас form-control для стандартних полів #}
+        {% if field.type != 'BooleanField' %}
+            {# ЗМІНИ ТУТ: ВИКОРИСТОВУЄМО **kwargs, ЯКИЙ ПЕРЕДАЄТЬСЯ АВТОМАТИЧНО #}
+            {{ field(class="form-control", **kwargs) }} 
+        {% else %}
+            {# Для BooleanField (checkbox) використовуємо інший шаблон #}
+            <div class="form-check">
+                {{ field(class="form-check-input", **kwargs) }}
+                {{ field.label(class="form-check-label") }}
+            </div>
+        {% endif %}
+
+        {% if field.errors %}
+            <ul class="list-unstyled">
+            {% for error in field.errors %}
+                <li class="text-danger small">{{ error }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endmacro %}

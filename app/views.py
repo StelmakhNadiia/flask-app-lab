@@ -1,31 +1,32 @@
-from flask import render_template, flash, redirect, url_for
-from app import app
+from flask import (render_template, request, make_response, 
+                   redirect, url_for, flash, Blueprint)
 from app.forms import ContactForm
 import logging
 
-@app.route('/')
-def resume():
-    return render_template('resume.html', title="My Resume")
+
+main_bp = Blueprint('main', __name__)
+
+logging.basicConfig(filename='contact.log', 
+                    level=logging.INFO, 
+                    format='%(asctime)s - %(message)s')
 
 
-@app.route('/contacts', methods=['GET', 'POST'])
-def contacts():
+@main_bp.route('/')
+def resume(): 
+    agent = request.user_agent 
+    return render_template('resume.html', agent=agent)
+
+@main_bp.route('/contacts', methods=['GET', 'POST'])
+def contacts(): 
     form = ContactForm()
-
     if form.validate_on_submit():
-
         name = form.name.data
         email = form.email.data
-        phone = form.phone.data
-        message = form.message.data
+        
+        logging.info(f"New Contact: Name={name}, Email={email}, Subject={form.subject.data}")
+        flash(f'Дякуємо, {name} ({email})! Ваше повідомлення надіслано.', 'success')
+        
+        return redirect(url_for('main.contacts')) 
 
+    return render_template('contacts.html', form=form)
 
-        logging.info(f"New contact form submission: Name={name}, Email={email}, Phone={phone}")
-
-
-        flash(f'Thanks, {name}! Your message has been sent.', 'success')
-
-
-        return redirect(url_for('contacts'))
-
-    return render_template('contacts.html', title="Contacts", form=form)

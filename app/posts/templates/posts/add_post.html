@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% import "macros/form_macros.html" as rf %}
+
+{% block title %}{{ 'Create a New Post' }}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="content-card">
+            <h1 class="text-center">{{ title }}</h1>
+            <hr>
+
+            <form action="{{ action_url }}" method="POST" novalidate>
+
+                {{ form.hidden_tag() }}
+
+                {{ rf.render_field(form.title) }}
+                {{ rf.render_field(form.content) }}
+                {{ rf.render_field(form.category) }}
+                {{ rf.render_field(form.publish_date) }}
+
+                <div class="mb-3 form-check">
+                    {{ form.is_active(class="form-check-input") }}
+                    {{ form.is_active.label(class="form-check-label") }}
+                </div>
+                <hr>
+
+                {{ form.submit(class="btn btn-primary") }}
+                {% if post %}
+                <a href="{{ url_for('posts.detail_post', id=post.id) }}" class="btn btn-secondary">Cancel</a>
+                {% else %}
+                <a href="{{ url_for('posts.get_posts') }}" class="btn btn-secondary">Cancel</a>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

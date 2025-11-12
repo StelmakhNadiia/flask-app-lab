@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% import "_render_field.html" as rf %}
+{% import "macros/form_macros.html" as rf %}
 
 {% block title %}Login{% endblock %}
 
@@ -10,7 +10,7 @@
             <h1 class="text-center">Login</h1>
             <hr>
 
-            <form action="{{ url_for('users.login') }}" method="POST" novalidate>
+            <form action="{{ url_for('users_bp.login') }}" method="POST" novalidate>
 
                 {{ form.hidden_tag() }}
 
