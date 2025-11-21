@@ -952,3 +952,134 @@
 2025-11-12 19:26:04,473 - 127.0.0.1 - - [12/Nov/2025 19:26:04] "[36mGET /users/hi/administrator?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2025-11-12 19:26:04,508 - 127.0.0.1 - - [12/Nov/2025 19:26:04] "GET /users/hi/administrator?__debugger__=yes&cmd=resource&f=console.png&s=QYkkoLlmNYV5Qhj9yvlI HTTP/1.1" 200 -
 2025-11-20 16:46:09,333 - Error: Directory migrations already exists and is not empty
+2025-11-21 03:33:52,696 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 03:33:52,696 - [33mPress CTRL+C to quit[0m
+2025-11-21 03:33:52,699 -  * Restarting with stat
+2025-11-21 03:33:53,777 -  * Debugger is active!
+2025-11-21 03:33:53,831 -  * Debugger PIN: 379-794-252
+2025-11-21 03:37:12,716 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 03:37:12,717 - [33mPress CTRL+C to quit[0m
+2025-11-21 03:37:12,721 -  * Restarting with stat
+2025-11-21 03:37:13,988 -  * Debugger is active!
+2025-11-21 03:37:13,990 -  * Debugger PIN: 379-794-252
+2025-11-21 03:38:25,644 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 03:38:25,644 - [33mPress CTRL+C to quit[0m
+2025-11-21 03:38:25,646 -  * Restarting with stat
+2025-11-21 03:38:26,908 -  * Debugger is active!
+2025-11-21 03:38:26,911 -  * Debugger PIN: 379-794-252
+2025-11-21 03:42:54,145 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 03:42:54,145 - [33mPress CTRL+C to quit[0m
+2025-11-21 03:42:54,148 -  * Restarting with stat
+2025-11-21 03:42:55,505 -  * Debugger is active!
+2025-11-21 03:42:55,507 -  * Debugger PIN: 379-794-252
+2025-11-21 09:30:08,154 - 127.0.0.1 - - [21/Nov/2025 09:30:08] "GET / HTTP/1.1" 200 -
+2025-11-21 09:30:08,260 - 127.0.0.1 - - [21/Nov/2025 09:30:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-11-21 09:30:08,273 - 127.0.0.1 - - [21/Nov/2025 09:30:08] "GET /static/images/myphoto.jpg HTTP/1.1" 200 -
+2025-11-21 09:30:08,352 - 127.0.0.1 - - [21/Nov/2025 09:30:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-21 09:31:46,744 - 127.0.0.1 - - [21/Nov/2025 09:31:46] "[35m[1mGET /posts/create HTTP/1.1[0m" 500 -
+2025-11-21 09:31:46,803 - 127.0.0.1 - - [21/Nov/2025 09:31:46] "GET /posts/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-21 09:31:46,840 - 127.0.0.1 - - [21/Nov/2025 09:31:46] "GET /posts/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-21 09:31:46,912 - 127.0.0.1 - - [21/Nov/2025 09:31:46] "GET /posts/create?__debugger__=yes&cmd=resource&f=console.png&s=LqtIq7y8R6SyF7s0olS4 HTTP/1.1" 200 -
+2025-11-21 09:31:46,948 - 127.0.0.1 - - [21/Nov/2025 09:31:46] "GET /posts/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-21 09:31:57,359 - 127.0.0.1 - - [21/Nov/2025 09:31:57] "GET /posts/ HTTP/1.1" 200 -
+2025-11-21 09:31:57,390 - 127.0.0.1 - - [21/Nov/2025 09:31:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:31:57,401 - 127.0.0.1 - - [21/Nov/2025 09:31:57] "GET /posts/static/css/posts.css HTTP/1.1" 200 -
+2025-11-21 09:31:57,406 - 127.0.0.1 - - [21/Nov/2025 09:31:57] "GET /posts/static/img/default.jpg HTTP/1.1" 200 -
+2025-11-21 09:32:00,910 - 127.0.0.1 - - [21/Nov/2025 09:32:00] "[35m[1mGET /posts/create HTTP/1.1[0m" 500 -
+2025-11-21 09:32:00,930 - 127.0.0.1 - - [21/Nov/2025 09:32:00] "[36mGET /posts/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-21 09:32:00,942 - 127.0.0.1 - - [21/Nov/2025 09:32:00] "[36mGET /posts/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-21 09:32:00,971 - 127.0.0.1 - - [21/Nov/2025 09:32:00] "[36mGET /posts/create?__debugger__=yes&cmd=resource&f=console.png&s=LqtIq7y8R6SyF7s0olS4 HTTP/1.1[0m" 304 -
+2025-11-21 09:36:04,691 -  * Detected change in 'D:\\3 курс\\Python\\flask_app_stelmakh\\app\\posts\\views.py', reloading
+2025-11-21 09:36:04,859 -  * Restarting with stat
+2025-11-21 09:36:06,519 -  * Debugger is active!
+2025-11-21 09:36:06,520 -  * Debugger PIN: 379-794-252
+2025-11-21 09:36:09,799 - 127.0.0.1 - - [21/Nov/2025 09:36:09] "GET /posts/create HTTP/1.1" 200 -
+2025-11-21 09:36:09,883 - 127.0.0.1 - - [21/Nov/2025 09:36:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:37:07,342 -  * Detected change in 'D:\\3 курс\\Python\\flask_app_stelmakh\\app\\posts\\views.py', reloading
+2025-11-21 09:37:07,564 -  * Restarting with stat
+2025-11-21 09:37:09,821 -  * Debugger is active!
+2025-11-21 09:37:09,825 -  * Debugger PIN: 811-951-526
+2025-11-21 09:52:35,603 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 09:52:35,603 - [33mPress CTRL+C to quit[0m
+2025-11-21 09:52:35,606 -  * Restarting with stat
+2025-11-21 09:52:36,725 -  * Debugger is active!
+2025-11-21 09:52:36,728 -  * Debugger PIN: 379-794-252
+2025-11-21 09:52:40,370 - 127.0.0.1 - - [21/Nov/2025 09:52:40] "GET /posts/create HTTP/1.1" 200 -
+2025-11-21 09:52:40,439 - 127.0.0.1 - - [21/Nov/2025 09:52:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:52:42,115 - 127.0.0.1 - - [21/Nov/2025 09:52:42] "GET /posts/create HTTP/1.1" 200 -
+2025-11-21 09:52:42,137 - 127.0.0.1 - - [21/Nov/2025 09:52:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:52:44,347 - 127.0.0.1 - - [21/Nov/2025 09:52:44] "GET / HTTP/1.1" 200 -
+2025-11-21 09:52:44,367 - 127.0.0.1 - - [21/Nov/2025 09:52:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:52:44,376 - 127.0.0.1 - - [21/Nov/2025 09:52:44] "[36mGET /static/images/myphoto.jpg HTTP/1.1[0m" 304 -
+2025-11-21 09:52:48,406 - 127.0.0.1 - - [21/Nov/2025 09:52:48] "GET /posts/ HTTP/1.1" 200 -
+2025-11-21 09:52:48,432 - 127.0.0.1 - - [21/Nov/2025 09:52:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:52:48,437 - 127.0.0.1 - - [21/Nov/2025 09:52:48] "[36mGET /posts/static/img/default.jpg HTTP/1.1[0m" 304 -
+2025-11-21 09:52:48,437 - 127.0.0.1 - - [21/Nov/2025 09:52:48] "[36mGET /posts/static/css/posts.css HTTP/1.1[0m" 304 -
+2025-11-21 09:52:50,076 - 127.0.0.1 - - [21/Nov/2025 09:52:50] "GET /posts/create HTTP/1.1" 200 -
+2025-11-21 09:52:50,101 - 127.0.0.1 - - [21/Nov/2025 09:52:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:54:15,008 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 09:54:15,008 - [33mPress CTRL+C to quit[0m
+2025-11-21 09:54:15,010 -  * Restarting with stat
+2025-11-21 09:54:16,154 -  * Debugger is active!
+2025-11-21 09:54:16,156 -  * Debugger PIN: 379-794-252
+2025-11-21 09:54:19,696 - 127.0.0.1 - - [21/Nov/2025 09:54:19] "GET /posts/create HTTP/1.1" 200 -
+2025-11-21 09:54:19,763 - 127.0.0.1 - - [21/Nov/2025 09:54:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:55:33,088 - 127.0.0.1 - - [21/Nov/2025 09:55:33] "[32mPOST /posts/create HTTP/1.1[0m" 302 -
+2025-11-21 09:55:33,115 - 127.0.0.1 - - [21/Nov/2025 09:55:33] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 09:55:33,150 - 127.0.0.1 - - [21/Nov/2025 09:55:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:58:16,374 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 09:58:16,374 - [33mPress CTRL+C to quit[0m
+2025-11-21 09:58:16,378 -  * Restarting with stat
+2025-11-21 09:58:17,575 -  * Debugger is active!
+2025-11-21 09:58:17,577 -  * Debugger PIN: 379-794-252
+2025-11-21 09:58:20,146 - 127.0.0.1 - - [21/Nov/2025 09:58:20] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 09:58:20,209 - 127.0.0.1 - - [21/Nov/2025 09:58:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:58:24,461 - 127.0.0.1 - - [21/Nov/2025 09:58:24] "GET /posts/2/update HTTP/1.1" 200 -
+2025-11-21 09:58:24,484 - 127.0.0.1 - - [21/Nov/2025 09:58:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 09:58:27,130 - 127.0.0.1 - - [21/Nov/2025 09:58:27] "[32mPOST /posts/2/update HTTP/1.1[0m" 302 -
+2025-11-21 09:58:27,139 - 127.0.0.1 - - [21/Nov/2025 09:58:27] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 09:58:27,168 - 127.0.0.1 - - [21/Nov/2025 09:58:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:10:02,771 - 127.0.0.1 - - [21/Nov/2025 11:10:02] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:10:02,805 - 127.0.0.1 - - [21/Nov/2025 11:10:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:10:08,706 - 127.0.0.1 - - [21/Nov/2025 11:10:08] "GET /posts/2/update HTTP/1.1" 200 -
+2025-11-21 11:10:08,780 - 127.0.0.1 - - [21/Nov/2025 11:10:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:10:11,512 - 127.0.0.1 - - [21/Nov/2025 11:10:11] "[32mPOST /posts/2/update HTTP/1.1[0m" 302 -
+2025-11-21 11:10:11,527 - 127.0.0.1 - - [21/Nov/2025 11:10:11] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:10:11,566 - 127.0.0.1 - - [21/Nov/2025 11:10:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:37,138 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-11-21 11:14:37,138 - [33mPress CTRL+C to quit[0m
+2025-11-21 11:14:37,142 -  * Restarting with stat
+2025-11-21 11:14:38,466 -  * Debugger is active!
+2025-11-21 11:14:38,530 -  * Debugger PIN: 379-794-252
+2025-11-21 11:14:42,347 - 127.0.0.1 - - [21/Nov/2025 11:14:42] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:14:42,384 - 127.0.0.1 - - [21/Nov/2025 11:14:42] "[33mGET /posts/static/img/user.png HTTP/1.1[0m" 404 -
+2025-11-21 11:14:42,425 - 127.0.0.1 - - [21/Nov/2025 11:14:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:43,402 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:14:43,429 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:43,437 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "[33mGET /posts/static/img/user.png HTTP/1.1[0m" 404 -
+2025-11-21 11:14:43,620 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:14:43,654 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:43,663 - 127.0.0.1 - - [21/Nov/2025 11:14:43] "[33mGET /posts/static/img/user.png HTTP/1.1[0m" 404 -
+2025-11-21 11:14:44,431 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:14:44,465 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:44,467 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "[33mGET /posts/static/img/user.png HTTP/1.1[0m" 404 -
+2025-11-21 11:14:44,654 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:14:44,684 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:14:44,693 - 127.0.0.1 - - [21/Nov/2025 11:14:44] "[33mGET /posts/static/img/user.png HTTP/1.1[0m" 404 -
+2025-11-21 11:17:13,715 - 127.0.0.1 - - [21/Nov/2025 11:17:13] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:17:13,760 - 127.0.0.1 - - [21/Nov/2025 11:17:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:17:13,766 - 127.0.0.1 - - [21/Nov/2025 11:17:13] "GET /posts/static/img/user.jpg HTTP/1.1" 200 -
+2025-11-21 11:17:25,445 - 127.0.0.1 - - [21/Nov/2025 11:17:25] "GET /posts/2/update HTTP/1.1" 200 -
+2025-11-21 11:17:25,472 - 127.0.0.1 - - [21/Nov/2025 11:17:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:19:40,861 - 127.0.0.1 - - [21/Nov/2025 11:19:40] "[32mPOST /posts/2/update HTTP/1.1[0m" 302 -
+2025-11-21 11:19:40,882 - 127.0.0.1 - - [21/Nov/2025 11:19:40] "GET /posts/2 HTTP/1.1" 200 -
+2025-11-21 11:19:40,927 - 127.0.0.1 - - [21/Nov/2025 11:19:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-11-21 11:19:40,931 - 127.0.0.1 - - [21/Nov/2025 11:19:40] "[36mGET /posts/static/img/user.jpg HTTP/1.1[0m" 304 -

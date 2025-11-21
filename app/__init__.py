@@ -6,6 +6,7 @@ from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import MetaData
 from flask_migrate import Migrate
 import os
+
 class Base(DeclarativeBase):
     metadata = MetaData(naming_convention={
         "ix": 'ix_%(column_0_label)s',
@@ -58,5 +59,7 @@ def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flas
         # (Імпортуємо моделі з 'posts', як ви і запропонували)
         from .posts import models 
         # (Якщо у 'users' з'являться моделі, ми додамо тут 'from .users import models')
+
+        from .users import models
 
     return app
