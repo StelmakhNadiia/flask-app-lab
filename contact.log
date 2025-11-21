@@ -951,3 +951,4 @@
 2025-11-12 19:26:04,473 - 127.0.0.1 - - [12/Nov/2025 19:26:04] "[36mGET /users/hi/administrator?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
 2025-11-12 19:26:04,473 - 127.0.0.1 - - [12/Nov/2025 19:26:04] "[36mGET /users/hi/administrator?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2025-11-12 19:26:04,508 - 127.0.0.1 - - [12/Nov/2025 19:26:04] "GET /users/hi/administrator?__debugger__=yes&cmd=resource&f=console.png&s=QYkkoLlmNYV5Qhj9yvlI HTTP/1.1" 200 -
+2025-11-20 16:46:09,333 - Error: Directory migrations already exists and is not empty
