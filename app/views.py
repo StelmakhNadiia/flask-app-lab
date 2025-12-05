@@ -1,15 +1,14 @@
-from flask import (render_template, request, make_response, 
-                   redirect, url_for, flash, Blueprint)
+# app/views.py
+from flask import render_template, request, redirect, url_for, flash, Blueprint
 from app.forms import ContactForm
 import logging
 
-
 main_bp = Blueprint('main', __name__)
 
+# Налаштування логування (можна залишити як було)
 logging.basicConfig(filename='contact.log', 
                     level=logging.INFO, 
                     format='%(asctime)s - %(message)s')
-
 
 @main_bp.route('/')
 def resume(): 
@@ -29,4 +28,3 @@ def contacts():
         return redirect(url_for('main.contacts')) 
 
     return render_template('contacts.html', form=form)
-

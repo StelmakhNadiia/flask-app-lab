@@ -2,7 +2,8 @@
     <div class="mb-3">
         {{ field.label(class="form-label") }}
 
-        {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
+        {# Додаємо **kwargs, щоб передати rows=3 та інші параметри у поле #}
+        {{ field(class="form-control" + (" is-invalid" if field.errors else ""), **kwargs) }}
 
         {% if field.errors %}
             <div class="invalid-feedback">

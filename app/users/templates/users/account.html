@@ -1,15 +1,56 @@
 {% extends "base.html" %}
+{% import "macros/form_macros.html" as rf %}
+
 {% block title %}Акаунт{% endblock %}
 
 {% block content %}
-    <div class="content-section">
-      <div class="media">
-        <div class="media-body">
-          <h2 class="account-heading">{{ current_user.username }}</h2>
-          <p class="text-secondary">{{ current_user.email }}</p>
-          <hr>
-          <p>Ласкаво просимо на сторінку вашого профілю!</p>
-        </div>
-      </div>
+<div class="content-section">
+  <div class="media d-flex align-items-center mb-4">
+    <img class="rounded-circle account-img me-3" src="{{ image_file }}" style="width: 125px; height: 125px; object-fit: cover;">
+    
+    <div class="media-body">
+      <h2 class="account-heading">{{ current_user.username }}</h2>
+      <p class="text-secondary mb-1">{{ current_user.email }}</p>
+      
+      {% if current_user.about_me %}
+        <p class="mb-1">{{ current_user.about_me }}</p>
+      {% endif %}
+      
+      {% if current_user.last_seen %}
+        <p class="text-muted"><small>Останній візит: {{ current_user.last_seen.strftime('%Y-%m-%d %H:%M') }}</small></p>
+      {% endif %}
     </div>
+  </div>
+  
+  <form method="POST" action="" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      <fieldset class="form-group">
+          <legend class="border-bottom mb-4">Налаштування профілю</legend>
+          
+          {{ rf.render_field(form.username) }}
+          {{ rf.render_field(form.email) }}
+          
+          <div class="mb-3">
+              {{ form.picture.label(class="form-label") }}
+              {{ form.picture(class="form-control") }}
+              {% if form.picture.errors %}
+                  {% for error in form.picture.errors %}
+                      <span class="text-danger small">{{ error }}</span><br>
+                  {% endfor %}
+              {% endif %}
+          </div>
+
+          {{ rf.render_field(form.about_me, rows=3) }}
+
+      </fieldset>
+      
+      <div class="form-group mt-3">
+          {{ form.submit(class="btn btn-outline-info") }}
+          
+          <a href="{{ url_for('users_bp.change_password') }}" class="btn btn-outline-warning ms-2">
+              Змінити пароль
+          </a>
+      </div>
+  </form>
+</div>
 {% endblock %}
