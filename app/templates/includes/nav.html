@@ -13,6 +13,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('users.profile') }}">Profile</a>
                     </li>
+                {% if current_user.is_authenticated %}  <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users_bp.all_users') }}">Всі користувачі</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users_bp.profile') }}">Профіль</a>
+    </li>
+    {% endif %}
                 {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('users.login') }}">Login</a>

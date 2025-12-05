@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% import "macros/form_macros.html" as rf %}
+
+{% block title %}Реєстрація{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="content-card">
+            <h1 class="text-center">Реєстрація</h1>
+            <hr>
+            
+            <form action="{{ url_for('users_bp.register') }}" method="POST" novalidate>
+                {{ form.hidden_tag() }}
+
+                {{ rf.render_field(form.username) }}
+                {{ rf.render_field(form.email) }}
+                {{ rf.render_field(form.password) }}
+                {{ rf.render_field(form.confirm_password) }}
+
+                <div class="d-grid gap-2 mt-4">
+                    {{ form.submit(class="btn btn-success btn-lg") }}
+                </div>
+            </form>
+            
+            <div class="text-center mt-3">
+                <small class="text-muted">
+                    Вже маєте акаунт? <a href="{{ url_for('users_bp.login') }}">Увійти</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

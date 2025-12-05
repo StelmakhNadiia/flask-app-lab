@@ -1,10 +1,11 @@
-# app/__init__.py
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from .config import config_map # config.py знаходиться у папці app/
+from .config import config_map
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import MetaData
 from flask_migrate import Migrate
+from flask_bcrypt import Bcrypt 
+from flask_login import LoginManager
 import os
 
 class Base(DeclarativeBase):
@@ -18,8 +19,12 @@ class Base(DeclarativeBase):
 
 db = SQLAlchemy(model_class=Base)
 migrate = Migrate()
+bcrypt = Bcrypt()  
 
-# Функція створення застосунку фабричного типу
+login_manager = LoginManager()
+login_manager.login_view = 'users_bp.login' 
+login_manager.login_message_category = 'info' 
+
 def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flask:
 
     app = Flask(__name__)
@@ -29,7 +34,10 @@ def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flas
 
     db.init_app(app)
     migrate.init_app(app, db)
+    bcrypt.init_app(app)  
+    login_manager.init_app(app)
 
+    
     # --- РЕЄСТРАЦІЯ ОБРОБНИКА ПОМИЛОК (404) ---
     @app.errorhandler(404)
     def page_not_found(e):
@@ -37,29 +45,23 @@ def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flas
     # -------------------------------------------
 
     with app.app_context():
-        # 1. Ваш головний blueprint (resume, contacts)
+        # 1. Головний blueprint
         from . import views as main_blueprint
         app.register_blueprint(main_blueprint.main_bp)
         
-        # 2. ВАШ 'users_bp'
+        # 2. 'users_bp'
         from .users.views import users_bp
         app.register_blueprint(users_bp)
         
-        # 3. ВАШ 'post_bp'
+        # 3. 'post_bp'
         from .posts import post_bp
         app.register_blueprint(post_bp, url_prefix="/posts")
 
-        
         from .products import products_bp
         app.register_blueprint(products_bp)   
 
         from .products import models
-        
-        # === НОВИЙ РЯДОК (Частина 4) ===
-        # (Імпортуємо моделі з 'posts', як ви і запропонували)
         from .posts import models 
-        # (Якщо у 'users' з'являться моделі, ми додамо тут 'from .users import models')
-
         from .users import models
 
     return app
