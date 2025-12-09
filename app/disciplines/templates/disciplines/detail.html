@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('disciplines_bp.static', filename='css/disciplines.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            
+            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                <div class="card-header bg-dark text-white p-4 d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">{{ discipline.name }}</h2>
+                    <span class="badge bg-info text-dark fs-6">{{ discipline.category.name }}</span>
+                </div>
+                
+                <div class="card-body p-5">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h6 class="text-muted text-uppercase fw-bold">Кількість годин</h6>
+                            <p class="fs-4">{{ discipline.hours }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-muted text-uppercase fw-bold">Автор запису</h6>
+                            <div class="d-flex align-items-center">
+                                <span class="fw-bold text-primary">{{ discipline.user.username }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4 mb-3">Опис дисципліни</h5>
+                    <p class="lead text-secondary" style="white-space: pre-wrap;">{{ discipline.description }}</p>
+                </div>
+
+                <div class="card-footer bg-light p-4 d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('disciplines_bp.list_disciplines') }}" class="btn btn-outline-secondary rounded-pill">← Назад до списку</a>
+                    
+                    {% if current_user.is_authenticated and current_user == discipline.user %}
+                    <div class="btn-group">
+                        <a href="{{ url_for('disciplines_bp.update_discipline', id=discipline.id) }}" class="btn btn-warning rounded-pill mx-1">✏️ Редагувати</a>
+                        
+                        <button type="button" class="btn btn-danger rounded-pill mx-1" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                            🗑️ Видалити
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Видалення</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Ви точно хочете видалити <strong>{{ discipline.name }}</strong>?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ні</button>
+                            <form action="{{ url_for('disciplines_bp.delete_discipline', id=discipline.id) }}" method="POST" style="display:inline;">
+                                 <input type="submit" class="btn btn-danger" value="Так, видалити">
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

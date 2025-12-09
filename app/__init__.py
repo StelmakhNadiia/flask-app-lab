@@ -60,8 +60,14 @@ def create_app(config_name: str = os.environ.get("FLASK_CONFIG", "dev")) -> Flas
         from .products import products_bp
         app.register_blueprint(products_bp)   
 
+        # 4. 'disciplines_bp' (Самостійна робота)
+        from .disciplines import disciplines_bp
+        app.register_blueprint(disciplines_bp, url_prefix="/disciplines")
+
+        # Імпорт моделей для міграцій
         from .products import models
         from .posts import models 
         from .users import models
-
-    return app
+        from .disciplines import models
+        
+        return app

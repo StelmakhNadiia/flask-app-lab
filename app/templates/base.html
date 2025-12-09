@@ -27,22 +27,33 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                     
                         <a class="nav-link" href="{{ url_for('main.resume') }}">Резюме</a>
                     </li>
                     <li class="nav-item">
-                      
                         <a class="nav-link" href="{{ url_for('main.contacts') }}">Контакти</a>
                     </li>
                     <li class="nav-item">
-                       
                         <a class="nav-link" href="{{ url_for('posts.get_posts') }}">Пости</a>
                     </li>
-                </ul>
+                    
+                    {% if current_user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="{{ url_for('disciplines_bp.list_disciplines') }}"> Дисципліни</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('users_bp.all_users') }}">Користувачі</a>
+                        </li>
+                    {% endif %}
+                    </ul>
                 <ul class="navbar-nav">
                     {% if current_user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('users_bp.account') }}">Профіль ({{ current_user.username }})</a>
+                            <a class="nav-link" href="{{ url_for('users_bp.account') }}">
+                                {% if current_user.image %}
+                                <img src="{{ url_for('static', filename='images/' + current_user.image) }}" class="rounded-circle" style="width: 25px; height: 25px; object-fit: cover; margin-right: 5px;">
+                                {% endif %}
+                                {{ current_user.username }}
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('users_bp.logout') }}">Вийти</a>
@@ -63,23 +74,21 @@
     <main class="container mt-4">
         {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
-            <ul class="flashes"> 
+            <ul class="flashes list-unstyled"> 
             {% for category, message in messages %}
               <li class="alert alert-{{ category }}">{{ message }}</li>
             {% endfor %}
             </ul>
           {% endif %}
         {% endwith %}
-
         {% block content %}{% endblock %}
     </main>
 
     <footer>
-        {% include 'includes/footer.html' %}
+        {% include 'includes/footer.html' ignore missing %}
         
-        <div class="container text-center pb-3">
+        <div class="container text-center pb-3 pt-3">
             {% if theme == 'light' %}
-            
                 <a href="{{ url_for('users_bp.set_profile_theme', theme='dark') }}" class="btn btn-dark btn-sm">
                     Переключити на темну
                 </a>
